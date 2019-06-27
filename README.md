@@ -30,7 +30,9 @@ Authors: Ignacio Carlucho - Mariano De Paula - Gerardo Acosta
 python main.py
 ```
 
-In main.py there is a variable called platform. By assigning to this variable the available robots in the robot dictionary, the algorithm will run it accordingly, with the parameters configured in the dictionary. 
+In main.py there is a variable called platform. By assigning to this variable the available robots in the robot dictionary, the algorithm will run it accordingly, 
+with the parameters configured in the dictionary.   
+By default it is set in 'pioneer_pi' wich is configured for running the pioneer robot in a simulated environment using gazebo. 
 
 
 
@@ -42,19 +44,22 @@ In main.py there is a variable called platform. By assigning to this variable th
 Into the catkin workspace clone 
 
 ```
-git clone https://github.com/MobileRobots/amr-ros-config
+git clone https://github.com/IgnacioCarlucho/amr-ros-config
 ```
 then you can launch an example scenery as: 
 ```
-roslaunch amr_robots_gazebo example-pioneer3at-terrainworld.launch
+roslaunch amr_robots_gazebo empty_world.launch 
+
 ```
-Source: https://github.com/MobileRobots/amr-ros-config
+
 
 Once the gazebo simulation is running you can then execute the algorithm by running: 
 
 ```
 python main.py
 ```
+
+This simulation is speed up for doing faster trials, they can be slowed down using gazebo. 
 
 
 ### Husky 
